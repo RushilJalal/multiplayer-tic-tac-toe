@@ -1,0 +1,22 @@
+.square {
+    width: 100px;
+    height: 100px;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #333;
+    background: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.square:disabled {
+    cursor: not-allowed;
+    background: #f0f0f0;
+}
+
+.square:hover:not(:disabled) {
+    background: #e0e0e0;
+    transform: scale(1.05);
+}

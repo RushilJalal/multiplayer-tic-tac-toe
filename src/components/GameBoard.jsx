@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { useWebSocket } from "../WebSocketContext";
 import Square from "./Square";
+import "../GameBoard.css";
 
 const GameBoard = () => {
   const socket = useWebSocket();
@@ -50,10 +51,16 @@ const GameBoard = () => {
   };
 
   return (
-    <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 100px)" }}>
-      {board.map((cell, index) => (
-        <Square key={index} value={cell} onClick={() => handleClick(index)} />
-      ))}
+    <div className="game-board">
+      <h1>Multiplayer Tic Tac Toe</h1>
+      <div className="board">
+        {board.map((cell, index) => (
+          <Square key={index} value={cell} onClick={() => handleClick(index)} />
+        ))}
+      </div>
+      <div className="status">
+        <p>{isMyTurn ? "Your turn" : "Opponent's turn"}</p>
+      </div>
     </div>
   );
 };

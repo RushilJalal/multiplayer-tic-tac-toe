@@ -1,10 +1,10 @@
 import GameBoard from "./components/GameBoard";
 import { WebSocketProvider } from "./WebSocketContext";
+import "./App.css";
 
 function App() {
   return (
     <WebSocketProvider>
-      <h1>Multiplayer Tic Tac Toe</h1>
       <GameBoard />
     </WebSocketProvider>
   );

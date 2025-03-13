@@ -1,12 +1,48 @@
-# React + Vite
+# Multiplayer Tic-Tac-Toe
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a multiplayer Tic-Tac-Toe game built using WebSocket. The game allows two players to play Tic-Tac-Toe in real-time.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Real-time multiplayer gameplay
+- Simple and intuitive user interface
+- Responsive design for mobile and desktop
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Follow these instructions to get a copy of the project up and running on your local machine.
+
+### Prerequisites
+
+Make sure you have the following installed on your machine:
+
+- [Node.js](https://nodejs.org/)
+- [npm](https://www.npmjs.com/)
+
+### Installation
+
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/yourusername/multiplayer-tic-tac-toe.git
+   ```
+2. Navigate to the project directory:
+   ```sh
+   cd multiplayer-tic-tac-toe
+   ```
+3. Install the dependencies:
+   ```sh
+   npm install
+   ```
+
+### Running the App
+
+1. Start the development server:
+   ```sh
+   cd path-to-project/server
+   node server.js
+   ```
+2. Start the clients
+   ```sh
+   cd path-to-project/
+   npm run dev
+   ```

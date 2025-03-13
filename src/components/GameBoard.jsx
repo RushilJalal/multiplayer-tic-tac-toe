@@ -28,6 +28,11 @@ const GameBoard = () => {
     socket.on("game-over", ({ winner, board }) => {
       setBoard(board);
       alert(winner === "Draw" ? "It's a draw!" : `Player ${winner} wins!`);
+      //refresh the page
+      window.location.reload();
+      //refresh the board
+      setBoard(Array(9).fill(null));
+      setIsMyTurn(false);
     });
 
     socket.on("player-disconnected", () => {

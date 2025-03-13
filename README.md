@@ -8,6 +8,10 @@ This is a multiplayer Tic-Tac-Toe game built using WebSocket. The game allows tw
 - Simple and intuitive user interface
 - Responsive design for mobile and desktop
 
+## Screenshot
+
+![image of the app](image.png)
+
 ## Getting Started
 
 Follow these instructions to get a copy of the project up and running on your local machine.
